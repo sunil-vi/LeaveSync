@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { LeaveTableComponent } from "./leave-table/leave-table.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [LeaveTableComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+  standalone:true
 })
 export class AppComponent {
-  title = 'LeaveSync';
+
 }
